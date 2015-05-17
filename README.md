@@ -13,6 +13,8 @@ Use case (hasn't been tested on anything else): I have a Garmin Zumo 660. If you
 	> include './gpxmerge.rb'
 	> GpxMerge.merge_all_gpx_files('data', 'output.gpx', true)
 
-The "true" opetion removes the `<name>` element from the output. This can be pretty annoying in Google Earth if you have a lot of data.
+The "true" option removes the `<name>` element from the output. This can be pretty annoying in Google Earth if you have a lot of data.
 
 Pull requests welcome.
+
+<img src='https://raw.githubusercontent.com/wiseleyb/gpxmerge/master/sample.png'/>
