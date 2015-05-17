@@ -15,6 +15,8 @@ Use case (hasn't been tested on anything else): I have a Garmin Zumo 660. If you
 
 The "true" option removes the `<name>` element from the output. This can be pretty annoying in Google Earth if you have a lot of data.
 
+More GPX data is available at [https://github.com/wiseleyb/gps-data](https://github.com/wiseleyb/gps-data) if you want something to play around with.
+
 Pull requests welcome.
 
 <img src='https://raw.githubusercontent.com/wiseleyb/gpxmerge/master/sample.png'/>
