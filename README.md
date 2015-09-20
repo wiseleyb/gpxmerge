@@ -11,11 +11,20 @@ Use case (hasn't been tested on anything else): I have a Garmin Zumo 660. If you
 	gem install nokogiri
 	irb
 	> require './gpxmerge.rb'
-	> GpxMerge.merge_all_gpx_files('data', 'output.gpx', true)
+	> GpxMerge.merge('data', 'output.gpx')
 
-The "true" option removes the `<name>` element from the output. This can be pretty annoying in Google Earth if you have a lot of data.
+Merge has more options if you want...
 
-You can also use the `GpxMerge.merge` method which has more flexibility and allows you to filter by dates. See code for documentation.
+        GpsMerge.merge('data', 'data/output.gpx')
+        files: filename or an array of files or a path name (which will find *.gpx)
+        output: filename for results
+        days: a day or an array of days to filter on in format 'YYYY-MM-DD' or a
+          Range of days ('2015-01-10'..'2015-01-15')
+        options:
+          keep_name: false (default) remove track names... this can really clutter up Google Earth
+          keep_waypoints: false (default)  waypoints (xmlns:wpt) will be removed
+
+See code for documentation.
 
 More GPX data is available at [https://github.com/wiseleyb/gps-data](https://github.com/wiseleyb/gps-data) if you want something to play around with.
 
